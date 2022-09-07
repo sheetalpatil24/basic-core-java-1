@@ -1,46 +1,36 @@
 import java.util.Scanner;
+
+
+
+
+//1.leap year century- gap between two leap years is 400 so after dividing it by 100 and 400 it will give reminder  is 0
+//2.yearly -after dividing by 100 and 4 will give reminder 0
+
 public class BasicCore {
     public static void main(String[] args) {
-        int heads = 0;
-        int tails= 0;
-        int count= 1;
-        //we have to value in decimals so we will take double as data type
-        double random=0.0;
+        //year will be input here
+        int y;
+        System.out.println("enter any year");
+        //scanner class used to input value in runtime
+        //leap=object reference
+        Scanner leap = new Scanner(System.in);
+        y=leap.nextInt();
 
-        System.out.println("please enter the number");
-        Scanner co = new Scanner(System.in);
-        int flips = co.nextInt();
-        while(count<= flips){
-            
-            
-            //count should be increase random number should generate  till flip=count
-            random=Math.random();
-              System.out.println(count+" "+random);
-            
-            if(random<0.5){  
-               heads++;  
-               System.out.println("heads");
-            }
-            else {
-                tails++;
-                System.out.println("tails");
-            }
-            count++;
-            System.out.println("number of heads :" +heads);
-            System.out.println("number of tails :" +tails);
+        if(y%100==0 && y%400==0 || y%100!=0 && y%4==0 )
+        {
+            System.out.println("leap year");
 
-            double headpercent=(double)heads/flips*100;
-            double tailpercent=(double)tails/flips*100;
-
+        }
+        else
+        {
+            System.out.println("not leap year");
+        
         }
     }
 }
-
-
-            
-
-               
+        
         
 
-    
 
+
+    
