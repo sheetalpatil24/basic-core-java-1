@@ -6,7 +6,7 @@ import java.util.Scanner;
 //1.leap year century- gap between two leap years is 400 so after dividing it by 100 and 400 it will give reminder  is 0
 //2.yearly -after dividing by 100 and 4 will give reminder 0
 
-public class BasicCore {
+public class BasicCore{
     public static void main(String[] args) {
         //year will be input here
         int y;
