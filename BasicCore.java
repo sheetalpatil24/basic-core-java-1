@@ -15,7 +15,7 @@ public class BasicCore {
             
             //count should be increase random number should generate  till flip=count
             random=Math.random();
-            System.out.println(count+" "+random) ;
+              System.out.println(count+" "+random);
             
             if(random<0.5){  
                heads++;  
