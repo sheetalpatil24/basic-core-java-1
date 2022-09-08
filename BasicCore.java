@@ -1,27 +1,28 @@
+
+
 import java.util.Scanner;
-// n th harmonic number is the sum of reciprocals of the first n natural number
- public class BasicCore{
-    public static void main(String[] args) {
 
-        System.out.println("enter the number");
-        Scanner n=new Scanner(System.in);
-        int num = n.nextInt();
-        
-        //result will be in decimal so take variable  double
-        //N !=0 should greater than 0
-        
-            double result=0.0;
-            System.out.println("the harmonic series is");
-            while (num>0){
-                result = result +(double)1/num;
-                num--;
-            System.out.println(result +" , ");
+public class BasicCore{
 
 
-        }
-        
-    }
- }
+	void multiply(int n){
+		int num = 1;
+		for(int i=0; i<n; i++) {
+			num = num*2;
+			System.out.println(num);
+		}
+	}
+		public static void main(String[] args){
+			BasicCore P2 = new BasicCore ();
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter a number");
+			int n = sc.nextInt();
+			P2.multiply(n);
+		}
+	}
+
+
+	
 
         
 
