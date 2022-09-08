@@ -1,31 +1,39 @@
 
-
 import java.util.Scanner;
-
 public class BasicCore{
 
+    public static void main(String[] args) {
+        
+        Scanner fac = new Scanner(System.in);
+      // n-vairable
+        int n ;
+        System.out.println("enter n");  
+         n = fac.nextInt();
+         //factors will be prime number
+         //d stands for divisor
 
-	void multiply(int n){
-		int num = 1;
-		for(int i=0; i<n; i++) {
-			num = num*2;
-			System.out.println(num);
-		}
-	}
-		public static void main(String[] args){
-			BasicCore P2 = new BasicCore ();
-			Scanner sc = new Scanner(System.in);
-			System.out.println("Enter a number");
-			int n = sc.nextInt();
-			P2.multiply(n);
-		}
-	}
+         for(int d=2 ; d < n; d += 1 )
+          {
+            while(n % d==0)
+            {
+                n= n/d;
+                System.out.println(d);
+            }
+
+            }
 
 
-	
+
+        }
+    }
+
+
+
+
+
+
+
+
 
         
-
-
-
     
